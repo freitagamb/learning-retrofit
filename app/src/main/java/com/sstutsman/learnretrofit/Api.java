@@ -16,7 +16,7 @@ public class Api {
     // Notice these are both Static
 
     // This is the endpoint URL we will be accessing -- it will return to us JSON data
-    private static final String ENDPOINT = "http://private-8ceb6-learnretofitpeople.apiary-mock.com/people/";
+    private static final String ENDPOINT = "http://private-8ceb6-learnretofitpeople.apiary-mock.com/";
     // PeopleService is an interface which describes all of the network calls we can make
     private static PeopleService peopleService;
 
