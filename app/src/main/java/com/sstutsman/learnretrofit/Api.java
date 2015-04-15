@@ -12,9 +12,8 @@ import retrofit.converter.GsonConverter;
  * Sam Stutsman on March, 2015.
  */
 public class Api {
-    private static final int HTTP_NOT_AUTHORIZED = 401;
 
-    private static final String ENDPOINT = "http://nodakevents-dev.myriadapps.com/api/v1/";
+    private static final String ENDPOINT = "http://private-8ceb6-learnretofitpeople.apiary-mock.com/people/";
     private static PeopleService peopleService;
 
     private Api() {
