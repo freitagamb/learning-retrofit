@@ -13,6 +13,7 @@ import java.util.List;
 
 public class MainActivity extends ActionBarActivity {
 
+    // This is the dataset for the RecyclerView
     private List<Person> people;
 
     private TextView tvDownload;
@@ -31,15 +32,19 @@ public class MainActivity extends ActionBarActivity {
         tvDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // This is an AsyncTask call
                 new PeopleTask().execute();
             }
         });
     }
 
+    // This is the AsyncTask which will make our network call off the main thread
+    // otherwise, our app would be locked up until it was finished
     private class PeopleTask extends AsyncTask<Void, Void, Void> {
 
         @Override
         protected Void doInBackground(Void... params) {
+            // This accesses our Api singleton and requests a service, then a specific call.
             people = Api.get().getPeople();
             return null;
         }

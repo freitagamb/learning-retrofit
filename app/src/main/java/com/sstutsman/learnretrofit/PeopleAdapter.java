@@ -23,7 +23,7 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
             @Override
             public void onItemClick(View view, int position) {
                 Person person = persons.get(position);
-                // Whatever
+                // Whatever you gotta do!
             }
         };
     }

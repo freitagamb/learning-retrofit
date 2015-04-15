@@ -5,6 +5,7 @@ package com.sstutsman.learnretrofit;
  */
 public class Person {
 
+    // This is just a boring old object with accessors. Notice the nest object -- it matches perfectly the JSON structure
     private String name;
     private int age;
     private String phoneNumber;
